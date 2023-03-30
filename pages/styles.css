@@ -117,6 +117,7 @@ body {
     text-transform: none;
 }
 
+
 .answer-box {
     border-bottom-width: 1px;
     border-color: rgba(0, 0, 0, 0.675);
@@ -457,8 +458,8 @@ textarea {
 
  /* Loading ring animation */
 .loader {
-    width: 18px;
-    height: 18px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: inline-block;
     border-top: 2px solid #0d0d0d;
