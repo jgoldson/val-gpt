@@ -19,8 +19,9 @@ const answerQuestion = async (req, res) => {
   ];
   let GPT35Turbo = async (message) => {
     const response = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
+      model: req.body.model,
       messages: message,
+      max_tokens: 1024,
     });
 
     return response.data.choices[0].message.content;

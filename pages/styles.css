@@ -332,7 +332,7 @@ textarea {
     gap: 10px;
     height: min-content;
     max-width: 1200px;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     width: 100%;
 }

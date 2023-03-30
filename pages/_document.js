@@ -7,12 +7,12 @@ export default function Document() {
         <meta property="og:title" content="Val GPT" key="title" />
         <meta
           property="og:description"
-          content="Answer All of Your Questions About Valorant!"
+          content="Valorant AI powered by OpenAI"
           key="description"
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/q5n2Hjx/dailyworkout.jpg"
+          content="https://rare-gallery.com/mocahbig/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg"
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
         <link

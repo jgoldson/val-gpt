@@ -17,7 +17,7 @@ const Home = () => {
     //navigate to results page
     router.push({
       pathname: "/results",
-      query: { question: input },
+      query: { question: input, model: "gpt-3.5-turbo" },
     });
     //callAnswerQuestion(input);
   };
@@ -25,7 +25,7 @@ const Home = () => {
   const GenerateButton = ({ title }) => (
     <div className="prompt-buttons">
       <a
-        className="generate-button"
+        className="generate-button "
         onClick={() => callOpenAIEndpoints(userInput)}
       >
         <div className="generate">
@@ -54,8 +54,11 @@ const Home = () => {
               value={userInput}
               onChange={onUserChangedText}
             />
-
-            <GenerateButton title="Generate" />
+            <div className="container">
+              <div className="row">
+                <GenerateButton title="Submit" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

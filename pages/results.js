@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 const Results = () => {
   const [question, setQuestion] = useState("");
+  const [model, setModel] = useState("gpt-3.5-turbo");
   const router = useRouter();
 
   const [apiOutput, setApiOutput] = useState("");
@@ -18,6 +19,7 @@ const Results = () => {
     }
     if (router.query.question) {
       setQuestion(router.query.question);
+      setModel(router.query.model);
     }
   }, []);
 
@@ -39,7 +41,7 @@ const Results = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ input }),
+      body: JSON.stringify({ input, model }),
     });
     const data = await response.json();
 
@@ -48,7 +50,7 @@ const Results = () => {
   };
 
   const Page2 = () => (
-    <div className="container vertical-center">
+    <div className="container">
       {isGenerating ? (
         <div className="vertical-center">
           <span className="loader"></span>
