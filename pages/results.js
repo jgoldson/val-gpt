@@ -63,7 +63,7 @@ const Results = () => {
                     <h2>{question}</h2>
                   </div>
                 </div>
-                <div className="output-content">
+                <div className="output-content answer-box">
                   <p>{apiOutput}</p>
                 </div>
               </div>

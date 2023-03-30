@@ -10,6 +10,9 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
+    background-image: url("../assets/peakpx.jpg");
+    background-position: center center;
+    background-size: cover;
     background-color: rgb(255, 255, 255);
     flex-flow: column nowrap;
     gap: 10px;
@@ -41,7 +44,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #383838
+    color: #fff
 }
 
 .header-title {
@@ -64,7 +67,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    color: rgba(62, 62, 62, 0.75);
+    color: rgb(255, 255, 255);
 }
 
 .prompt-container {
@@ -81,14 +84,14 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.675);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.648);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -102,25 +105,60 @@ body {
     max-width: 1200px;
     will-change: transform;
     overflow: auto;
-    outline: black;
+    outline: rgb(243, 243, 243);
     resize: none;
     font-size: 16px;
     font-style: normal;
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: center;
-    color: rgba(71, 71, 71, 0.911);
+    color: rgba(0, 0, 0, 0.672);
     text-decoration: none;
     text-transform: none;
 }
 
+.answer-box {
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.675);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.222);
+    border-radius: 16px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: auto;
+    max-width: 1200px;
+    will-change: transform;
+    overflow: auto;
+    outline: rgb(243, 243, 243);
+    resize: none;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.672);
+    text-decoration: none;
+    text-transform: none;
+}
 textarea {
     font-family: 'Manrope', sans-serif;
+    color: #0d0d0d;
 }
 
 
 .prompt-box:focus {
-    border-color:rgba(67, 67, 67, 0.75)
+    border-color:rgba(255, 255, 255, 0.75)
 }
 
 
@@ -163,7 +201,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgba(95, 95, 95, 0.218);
+    color: rgb(8, 8, 8);
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -187,7 +225,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 18, 18);
+    background-color: rgba(255, 18, 18, 0.926);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -205,7 +243,7 @@ textarea {
 }
 
 .generate {
-    outline: none;
+    outline: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -314,13 +352,13 @@ textarea {
 
 .output-header h2 {
     font-family: "Manrope", serif;
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #303030;
+    color: #ffffff;
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -329,7 +367,7 @@ textarea {
 .output-content {
     outline: none;
     display: flex;
-    max-width: 70%;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -340,7 +378,7 @@ textarea {
     font-size:large;
     text-align: left;
     white-space: pre-line;
-    color: rgba(48, 48, 48, 0.5);
+    color: rgb(255, 255, 255);
     margin: 0px 20px;
 }
 

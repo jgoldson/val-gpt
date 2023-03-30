@@ -45,6 +45,7 @@ const Home = () => {
           <div className="header-title">
             <h1>Ask any question about Valorant</h1>
           </div>
+          <br></br>
 
           <div className="form-group ml-auto mr-auto">
             <textarea
